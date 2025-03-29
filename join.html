@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href = "layout/styles/join.css" rel="stylesheet">
+</head>
+<body>
+    <div id="join_wrap">
+        <center><img src = "../img/kekeo.png" width="300px" alight="center"></center>
+        <h1>회원가입</h1>
+        <form action="test1.html" method="get">
+            <fieldset>
+                <legend class="title">*필수입력정보</legend>
+                <table class="joinTable">
+                    <caption>회원가입 필수 입력표</caption>
+                    <tr>
+                        <th class="first"><label>아이디</label></th>
+                        <td class="first"><input type="text" class="textForm" required autofocus> <!-- 반드시입력 자동포커스 -->
+                        <input type="button" value="중복확인" class="btn"></td>
+                    </tr>
+                    <tr>
+                        <th><label>비밀번호</label></th>
+                        <td><input type="password" class="textForm"></td>
+                    </tr>
+                    <tr>
+                        <th><label>이름</label></th>
+                        <td><input type="text" class="textForm"></td>
+                    </tr>
+                    <tr>
+                        <th><label>연락처</label></th>
+                        <td><input type="tel" class="textForm"></td>
+                    </tr>
+                    <tr>
+                        <th><label>이메일</label></th>
+                        <td><input type="email" class="textForm"></td>
+                    </tr>
+                    <tr>
+                        <th><label>전자우편신청</label></th>
+                        <td><input type="radio">예, 신청합니다.
+                        <input type="radio">아니오, 신청하지 않습니다.</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend class="title">*선택입력정보</legend>
+                <table class="joinTable">
+                    <caption>회원가입 선택 입력표</caption>
+                    <tr>
+                        <th><label>프로필사진</label></th>
+                        <td><input type="file" name="user_file_name"></td>
+                    </tr>
+                    <tr>
+                        <th><label>생년월일</label></th>
+                        <td><input type="date" class="textForm"name="user_year"></td>
+                    </tr>
+                    <tr>
+                        <th><label>성별</label></th>
+                        <td><input type="radio">남
+                            <input type="radio">여
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>직업</label></th>
+                        <td><select>
+                            <option>회사원</option>
+                            <option>기술자</option>
+                            <option selected>학생</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th><label>자기소개</label></th>
+                        <td><textarea class="textForm"></textarea>
+                    </tr>
+                </table>
+            </fieldset>
+
+        <div class="btn_area">
+            <button type="reset">취소</button>
+            <button type="submit" class="btn_join">회원가입</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
