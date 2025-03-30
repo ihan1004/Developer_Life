@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* 기본 스타일 */
 body {
     font-family: Arial, sans-serif;
@@ -37,7 +39,6 @@ body {
 }
 
 /*=================================================*/
-@charset "utf-8";
 
 #popupContainer table {
     border: 1px;
