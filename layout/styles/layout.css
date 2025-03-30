@@ -31,20 +31,19 @@
 #header #logo{margin:22px 0 0 0;}
 
 #google_translate {
-	margin-top: 15px;
-	margin-right: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
 	text-align: center;
 }
 
-/* #google_translate > div > div {
-	position: relative;
-	min-width: 200px;
-	height: 60px;
-	margin-top: 15px;
-	margin-right: 10px;
+#google_translate > div > div {
+	position: ;
+	width: 120px;
+	height: 26px;
+	margin: 0 auto;
 	text-align: center;
 }
-#google_translate > div > div > select::-ms-expand {
+/* #google_translate > div > div > select::-ms-expand {
     display: none;
 }
 
