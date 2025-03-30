@@ -27,8 +27,59 @@
 	padding: 10px 20% 10px 20%; /* 내부 여백 */
 	margin: 0 auto;
 	}
+
 #header #logo{margin:22px 0 0 0;}
 
+#google_translate {
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+/* #google_translate > div > div {
+	position: relative;
+	min-width: 200px;
+	height: 60px;
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align: center;
+}
+#google_translate > div > div > select::-ms-expand {
+    display: none;
+}
+
+#google_translate > div > div:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    transform: rotate(90deg);
+    right: 11px;
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    pointer-events: none;
+}
+
+#google_translate > div > div > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    border-radius: 10px;
+} */
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
@@ -331,7 +382,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 .imgover, .imgover:hover::after{color:#FFFFFF;}
 
 .logoname a{color:#FFFFFF;}
-.logoname span{color:#97BDAB;}
+.logoname::first-letter, .logoname span{color:#97BDAB;}
 
 
 /* Rows */
