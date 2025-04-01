@@ -1,15 +1,34 @@
-/*
-Template Name: Chillaid
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Mobile Menu JS
+$('<form action="#"><select id="mobile-menu" /></form>').appendTo("#mainav");
+$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo("#mobile-menu");
 
-Thanks to:
-"Convert a Menu to a Dropdown for Small Screens" from Chris Collier - http://css-tricks.com/convert-menu-to-dropdown/
-"Submenu's with a dash" Daryn St. Pierre - http://jsfiddle.net/bloqhead/Kq43X/
-*/
+// 메인 네비게이션 메뉴의 링크만 선택
+$("#mainav > ul > li > a").each(function(){
+    var e=$(this);
+    if($(e).parents("ul ul ul").length>=1){
+        $("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo("#mobile-menu")
+    }else if($(e).parents("ul ul").length>=1){
+        $("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo("#mobile-menu")
+    }else if($(e).parents("ul").length>=1){
+        $("<option />",{value:e.attr("href"),text:""+e.text()}).appendTo("#mobile-menu")
+    }else{
+        $("<option />",{value:e.attr("href"),text:e.text()}).appendTo("#mobile-menu")
+    }
+});
 
-$('<form action="#"><select /></form>').appendTo("#mainav");$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo("#mainav select");$("#mainav a").each(function(){var e=$(this);if($(e).parents("ul ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo("#mainav select")}else if($(e).parents("ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo("#mainav select")}else if($(e).parents("ul").length>=1){$("<option />",{value:e.attr("href"),text:""+e.text()}).appendTo("#mainav select")}else{$("<option />",{value:e.attr("href"),text:e.text()}).appendTo("#mainav select")}});$("#mainav select").change(function(){if($(this).find("option:selected").val()!=="#"){window.location=$(this).find("option:selected").val()}})
+// 서브메뉴 링크 추가
+$("#mainav ul ul li a").each(function(){
+    var e=$(this);
+    if($(e).parents("ul ul ul").length>=1){
+        $("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo("#mobile-menu")
+    }else if($(e).parents("ul ul").length>=1){
+        $("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo("#mobile-menu")
+    }else{
+        $("<option />",{value:e.attr("href"),text:"- "+e.text()}).appendTo("#mobile-menu")
+    }
+});
+
+$("#mobile-menu").change(function(){
+    if($(this).find("option:selected").val()!=="#") {
+        window.location=$(this).find("option:selected").val();
+    }
+});
