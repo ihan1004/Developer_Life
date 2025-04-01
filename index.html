@@ -25,10 +25,10 @@
       </div>
       <nav id="mainav" class="fl_right" style="display: flex; align-items: center;">
         <ul class="clear">
-          <li class="active"><a href="index.html"></a></li>
+          <li class="active"><a href="index.html">홈</a></li>
           <li><a class="drop" href="#">작업 목록</a>
             <ul>
-              <li><a href="https://ihan1004.github.io/Remove_empty_lines/" target="_blank">빈 줄 제거</a></li>
+              <li><a href="https://ihan1004.github.io/Remove_empty_lines/" target="_blank">빈 줄 삭제</a></li>
               <li><a href="#" target="_blank">북마크-구글시트 연동 앱</a></li>
               <li><a href="#" target="_blank">의약품 복용기록 앱</a></li>
               <li><a href="#" target="_blank">Joplin 한글패치</a></li>
@@ -47,79 +47,101 @@
         </ul>
         &nbsp&nbsp&nbsp
         <button id="showPopup" style="color: white">
-          <font color="black">회원가입</font></button>
+          <font color="black">회원가입</font>
+        </button>
         <div id="popupContainer" class="popup-container">
 
           <div class="popup">
             <span id="closePopup" class="close-btn">×</span>
             <div id="join_wrap">
               <h1><img src="img/kekeo.png" width="395px" height="95px"></h1>
-              <!-- <form action="#" method="get"> -->
-                <fieldset>
-                  <legend class="title">*필수입력정보</legend>
-                  <table class="joinTable">
-                    <caption>회원가입 필수 입력표</caption>
-                    <tr>
-                      <th class="first"><label>아이디</label></th>
-                      <td class="first"><input type="text" class="textForm" required autofocus>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th><label>비밀번호</label></th>
-                      <td><input type="password" class="textForm"></td>
-                    </tr>
-                    <tr>
-                      <th><label>이름</label></th>
-                      <td><input type="text" class="textForm"></td>
-                    </tr>
-                    <tr>
-                      <th><label>연락처</label></th>
-                      <td><input type="tel" class="textForm"></td>
-                    </tr>
-                    <tr>
-                      <th><label>이메일</label></th>
-                      <td><input type="email" class="textForm"></td>
-                    </tr>
-                    <!-- <tr>
-                      <th><label>전자우편신청</label></th>
-                      <td><input type="radio">예<input type="radio">아니오</td>
-                    </tr> -->
-                  </table>
-                </fieldset>
-                <fieldset>
-                  <legend class="title">*선택입력정보</legend>
-                  <table class="joinTable">
-                    <caption>회원가입 선택 입력표</caption>
-                    <tr>
-                      <th><label>프로필사진</label></th>
-                      <td><input type="file" name="user_file_name"></td>
-                    </tr>
-                    <tr>
-                      <th><label>생년월일</label></th>
-                      <td><input type="date" class="textForm" name="user_year"></td>
-                    </tr>
-                    <!-- <tr>
-                      <th><label>성별</label></th>
-                      <td class=""><font color="#666"><input type="radio">남<input type="radio">여</font></td>
-                    </tr>
-                    <tr>
-                      <th><label>직업</label></th>
-                      <td><select>
-                          <option>회사원</option>
-                          <option>기술자</option>
-                          <option selected>학생</option>
-                        </select></td>
-                    </tr> -->
-                    <tr>
-                      <th><label>자기소개</label></th>
-                      <td><textarea class="textarea"></textarea>
-                    </tr>
-                  </table>
-                </fieldset>
-                <div class="btn_area">
-                  <button type="submit" class="btn_join">가입완료</button>
-                </div>
-              <!-- </form> -->
+              <!--<form action="#" method="get">-->
+              <fieldset>
+                <legend class="title">*필수입력정보</legend>
+                <table class="joinTable">
+                  <caption>회원가입 필수 입력표</caption>
+                  <tr>
+                    <th class="first"><label>아이디</label></th>
+                    <td class="first">
+                      <input type="text" class="textForm" style="color:black" required autofocus>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label>비밀번호</label></th>
+                    <td><input type="password" class="textForm" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>이름</label></th>
+                    <td><input type="text" class="textForm" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>연락처</label></th>
+                    <td><input type="tel" class="textForm" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>이메일</label></th>
+                    <td><input type="email" class="textForm" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>전자우편신청</label></th>
+                    <td style="text-align: left">
+                      <span style="color:black">
+                        <label style="display: inline-flex; margin-left: 10px; margin-right: 10px;">
+                          <input type="radio" name="option" value="yes"> 예
+                        </label>
+                        <label style="display: inline-flex;">
+                          <input type="radio" name="option" value="no"> 아니오
+                        </label>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+              <fieldset>
+                <legend class="title">*선택입력정보</legend>
+                <table class="joinTable">
+                  <caption>회원가입 선택 입력표</caption>
+                  <tr>
+                    <th><label>프로필사진</label></th>
+                    <td><input type="file" name="user_file_name" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>생년월일</label></th>
+                    <td><input type="date" class="textForm" name="user_year" style="color:black"></td>
+                  </tr>
+                  <tr>
+                    <th><label>성별</label></th>
+                    <td style="text-align: left">
+                      <span style="color:black">
+                        <label style="display: inline-flex; margin-left: 0px;">
+                          <input type="radio" name="gender" value="male">남
+                        </label>
+                        <label style="display: inline-flex;">
+                          <input type="radio" name="option" value="female">여
+                        </label>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label>직업</label></th>
+                    <td style="text-align: left">
+                      <select style="color: black;">
+                        <option>회사원</option>
+                        <option>기술자</option>
+                        <option selected>학생</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label>자기소개</label></th>
+                    <td><textarea class="textarea" style="color:black"></textarea>
+                  </tr>
+                </table>
+              </fieldset>
+              <div class="btn_area">
+                <button type="submit" class="btn_join">가입완료</button>
+              </div>
+              <!--</form>-->
             </div>
           </div>
         </div>
@@ -365,7 +387,7 @@
   <div class="bgded overlay row4" style="background-image:url('img/bottom.jpg');">
     <footer id="footer" class="hoc clear">
       <div class="one_quarter first">
-        <h1 class="logoname">Developer Life</h1>
+        <h1 class="logoname"><a href="index.html">Deveolper<span>L</span>ife</a></h1>
         <p>두근두근 초보 개발자 라이프... <a href="#"></a>파이팅!</p>
       </div>
     </footer>
@@ -383,6 +405,16 @@
   <script src="layout/scripts/jquery.backtotop.js"></script>
   <script src="layout/scripts/jquery.mobilemenu.js"></script>
   <script src="layout/scripts/jquery.easypiechart.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // 모바일 메뉴 초기화
+      $("#mobile-menu").change(function(){
+        if($(this).find("option:selected").val()!=="#") {
+          window.location=$(this).find("option:selected").val();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
