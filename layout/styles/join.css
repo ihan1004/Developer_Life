@@ -1,72 +1,103 @@
 @charset "utf-8";
-#{
+*{
     margin: 0;
     padding: 0;
 }
 fieldset {
     border: 0;
 }
-h1
+/* h1
 {
     text-align: center;
-}
-table {
-    /* border: 1px; */
+    vertical-align: auto;
+} */
+.popupContainer table {
+    border: 1px;
     border-collapse: collapse;
 }
-caption {
+.popupContainer caption {
     position: absolute;
     left: 9999em;
 }
-body {
+/* body {
     font-family: "맑은고딕", "나눔고딕", "sans-serif";
     font-size: 16px;
     color: #333;
+
+} */
+.popupContainer #join_wrap {
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
     background-color: #FFDC00;
 }
-#join_wrap {
-    width: 800px;
-    margin: 0 auto;
-}
-#join_wrap .title {
-    padding: 50px 0 20px;
+.popupContainer #join_wrap .title {
+    padding: 10px 0 20px;
     font-size: 20px;
     font-weight: 700;
 }
-.joinTable th, .joinTable td {
-    padding: 10px;
+.popupContainer .joinTable th, .joinTable td {
+    padding: 5px;
     box-sizing: border-box;
     border-bottom: 0px solid #ddd;
 }
-.joinTable th {
-    width: 180px;
+.popupContainer .joinTable th {
+    width: 160px;
     text-align: left;
-    background-color:;
+    background-color: transparent;
 }
-.joinTable td {
-    width: 620px;
+.popupContainer .joinTable td {
+    width: 100px;
 }
-.joinTable .textForm {
-    width: 420px;
-    height: 42px;
+.popupContainer .joinTable .textFormfirst {
+    width: 215px;
+    height: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 0px 10px;
     box-sizing: border-box;
 }
+.popupContainer .joinTable .textForm {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+#user_pwd, #user_pwd2 {
+    width: 300px !important;
+    height: 30px !important;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.popupContainer select {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 /*중복확인*/
-.joinTable .btn {
+.popupContainer .joinTable .btn {
     width: 80px;
-    height: 42px;
+    height: 30px;
     background-color: #333;
     border: 0;
     border-radius: 5px;
     color: #FEE500;
 }
+
 /*텍스트에리어*/
-.joinTable .textarea {
-    width: 420px;
-    height: 80px;
+.popupContainer .joinTable .textarea {
+    width: 300px;
+    height: 100px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -74,19 +105,20 @@ body {
     /* 테두리의 두께를 포함한 크기를 지정 */
 }
 /* 버튼 */
-.btn_area {
+.popupContainer .btn_area {
     text-align: center;
     margin: 30px 0;
 }
-.btn_area button {
-    width: 200px;
-    height: 72px;
+.popupContainer .btn_area button {
+    width: 150px;
+    height: 60px;
     margin: 0 10px;
     border: 0;
     font-size: 20px;
+    border-radius: 5px;
 }
-.btn_area .btn_join {
+.popupContainer .btn_area .btn_join {
     background-color: #333;
     color: #FEE500;
-    font-family: "kakao_bold";
+    border-radius: 5px;
 }
