@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인</title>
+    <link rel="stylesheet" href="styles/join_modal.css">
+    <link rel="stylesheet" href="styles/join_nav.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script type="text/javascript" src="scripts/join_modal.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <button class="btn_home" onclick="location.href='index.html'">홈으로</button>
+            <button class="btn_join" onclick="location.href='join_nav.html'">회원가입</button>
+            <button class="btn_join_success" onclick="location.href='join_success.html'">회원가입 성공</button>
+            <button class="btn_login" onclick="location.href='login.html'">로그인</button>
+            <button class="btn_login_success" onclick="location.href='login_success.html'">로그인 성공</button>
+        </nav>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <h1><img src="img/kekeo.png" width="395px" height="95px"></h1>
+            <form action="login_success.html" method="post">
+                <div class="input-group">
+                    <input type="text" id="user_id" name="user_id" required placeholder="아이디">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="user_pwd" name="user_pwd" required placeholder="비밀번호">
+                </div>
+                <div class="login-options">
+                    <label>
+                        <input type="checkbox" name="remember"> 아이디 저장
+                    </label>
+                    <div class="links">
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <button type="submit" class="login-btn">로그인</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

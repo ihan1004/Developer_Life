@@ -2,60 +2,33 @@
 <html>
 
 <head>
-    <title>회원가입</title>
-    <link rel="stylesheet" href="styles/join_modal.css">
-    <script type="text/javascript" src="scripts/join_check.js"></script>
-    <script type="text/javascript" src="scripts/join_modal.js"></script>
-    <script type="text/javascript">
-        function isSame(a, b) {
-            return a === b;
-        }
-        function check(form) {
-            if (!isSame(form.user_pwd.value, form.user_pwd2.value)) {
-                alert("비밀번호가 동일하지 않습니다");
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <title>Layer Popup Example</title>
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/join.css">
 </head>
+
 <body>
-    <nav class="nav-bar">
-        <a href="index.html" class="home-btn">홈으로</a>
-        <div class="right-buttons">
-            <button id="showPopup">회원가입</button>
-            <button class="login-btn" onclick="location.href='login.html'">로그인</button>
-        </div>
-    </nav>
+    <button id="showPopup">회원가입</button>
     <div id="popupContainer" class="popup-container">
         <div class="popup">
             <span id="closePopup" class="close-btn">×</span>
             <div id="join_wrap">
                 <h1><img src="../img/kekeo.png" width="395px" height="95px"></h1>
-                <form action="seccess.html" method="get" onsubmit="return check(this)">
+                <form action="seccess.html" method="get">
                     <fieldset>
                         <legend class="title">*필수입력정보</legend>
                         <table class="joinTable">
                             <caption>회원가입 필수 입력표</caption>
                             <tr>
                                 <th class="first"><label>아이디</label></th>
-                                <td class="first"><inpu<nav class="nav-bar">
-                                    <a href="index.html" class="home-btn">홈으로</a>
-                                    <div class="right-buttons">
-                                        <button id="showPopup">회원가입</button>
-                                        <button class="login-btn" onclick="location.href='login.html'">로그인</button>
-                                    </div>
+                                <td class="first"><input type="text" class="textFormfirst" required autofocus>
                                     <!-- 반드시입력 자동포커스 -->
                                     <input type="button" value="중복확인" class="btn">
                                 </td>
                             </tr>
                             <tr>
                                 <th><label>비밀번호</label></th>
-                                <td><input type="password" id="user_pwd" class="passForm" name="user_pwd"></td>
-                            </tr>
-                            <tr>
-                                <th><label>비밀번호 확인</label></th>
-                                <td><input type="password" id="user_pwd2" class="passForm" name="user_pwd2"></td>
+                                <td><input type="password" class="textForm"></td>
                             </tr>
                             <tr>
                                 <th><label>이름</label></th>
@@ -117,6 +90,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

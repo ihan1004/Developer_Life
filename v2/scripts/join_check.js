@@ -197,3 +197,14 @@ function check(xx) {
 
 	return true;
 }
+
+function isSame(a, b) {
+	return a === b;
+}
+function check(form) {
+	if (!isSame(form.user_pwd.value, form.user_pwd2.value)) {
+		alert("비밀번호가 동일하지 않습니다");
+		return false;
+	}
+	return true;
+}

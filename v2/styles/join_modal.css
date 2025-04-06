@@ -28,33 +28,6 @@ body {
     padding-top: 70px;
 }
 
-.nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.home-btn {
-    text-decoration: none;
-    background: linear-gradient(45deg, #FF6B6B, #FF8E53);
-    color: white;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: opacity 0.3s;
-}
-
-.home-btn:hover {
-    opacity: 0.9;
-}
-
 .right-buttons {
     display: flex;
     gap: 1rem;
@@ -83,7 +56,7 @@ body {
 }
 
 .popup {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,7 +97,7 @@ caption {
 
 #join_wrap .title {
     padding: 10px 0 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -145,7 +118,7 @@ caption {
     width: 100px;
 }
 
-.joinTable .textFormfirst {
+.joinTable .idForm {
     width: 215px;
     height: 30px;
     border: 1px solid #ddd;
@@ -184,7 +157,7 @@ select {
 }
 
 /*중복확인*/
-.joinTable .btn {
+.joinTable .btn_ok {
     width: 80px;
     height: 30px;
     background-color: #333;
@@ -219,13 +192,14 @@ select {
     border-radius: 5px;
 }
 
-.btn_area .btn_join {
+.btn_area .btn_submit {
     background-color: #333;
     color: #FEE500;
     border-radius: 5px;
 }
 
-#showPopup {
+/* 회원가입 버튼 */
+.btn_join {
     background: linear-gradient(45deg, #FF6B6B, #FF8E53);
     color: white;
     border: none;
@@ -236,14 +210,65 @@ select {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    margin: 10px;
 }
 
-#showPopup:hover {
+.btn_join:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
 }
 
-#showPopup:active {
+.btn_join:active {
     transform: translateY(1px);
     box-shadow: 0 2px 10px rgba(255, 107, 107, 0.2);
+}
+
+/* 홈 버튼 */
+.btn_home {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    margin: 10px;
+}
+
+.btn_home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn_home:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(76, 175, 80, 0.2);
+}
+
+/* 로그인 버튼 */
+.btn_login {
+    background: linear-gradient(45deg, #2196F3, #03A9F4);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    margin: 10px;
+}
+
+.btn_login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+.btn_login:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(33, 150, 243, 0.2);
 }
