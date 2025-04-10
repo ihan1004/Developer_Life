@@ -1,9 +1,9 @@
-.user_id {
+.user_login_id {
     width: 420px;
     height: 44px;
 }
 
-.user_pwd {
+.user_login_pwd {
     width: 420px;
     height: 44px;
 }
