@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 이동</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .version-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .v1-button {
+            background: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+        }
+        .v2-button {
+            background: linear-gradient(45deg, #4E65FF, #92EFFD);
+        }
+        .version-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        .version-button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="v1/index.html" class="version-button v1-button">V1</a>
+        <a href="v2/index.html" class="version-button v2-button">V2</a>
+    </div>
+</body>
+</html>
