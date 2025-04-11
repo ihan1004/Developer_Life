@@ -3,9 +3,9 @@
 
 <head>
     <title>회원가입</title>
-    <link rel="stylesheet" href="styles/join_modal.css">
-    <script type="text/javascript" src="scripts/join_check.js"></script>
-    <script type="text/javascript" src="scripts/join_modal.js"></script>
+    <link rel="stylesheet" href="css/join_modal.css">
+    <script type="text/javascript" src="js/join_check.js"></script>
+    <script type="text/javascript" src="js/join_modal.js"></script>
     <script type="text/javascript">
         function isSame(a, b) {
             return a === b;
@@ -29,8 +29,7 @@
             right: 0;
             z-index: 1000;
         }
-        
-        nav {
+        .nav {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -38,7 +37,6 @@
             align-items: center;
             gap: 20px;
         }
-        
         .nav-link {
             text-decoration: none;
             color: #333;
@@ -47,20 +45,16 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
-        
         .nav-link:hover {
             background-color: #f0f0f0;
         }
-        
         .nav-link.active {
             background-color: #4CAF50;
             color: white;
         }
-        
         .nav-link.active:hover {
             background-color: #45a049;
         }
-        
         /* Add margin to the main content to prevent it from being hidden under the navbar */
         #join_wrap {
             margin-top: 80px;
@@ -76,7 +70,7 @@
             <span id="closePopup" class="close-btn">×</span>
             <div id="join_wrap">
                 <h1><img src="../img/kekeo.png" width="395px" height="95px"></h1>
-                <form action="seccess.html" method="get" onsubmit="return check(this)">
+                <form action="join_success.html" method="get" onsubmit="return check(this)">
                     <fieldset>
                         <legend class="title">*필수입력정보</legend>
                         <table class="joinTable">

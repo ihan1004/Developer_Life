@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>회원가입</title>
-    <link rel="stylesheet" href="styles/join_nav.css">
-    <script type="text/javascript" src="scripts/join_check.js"></script>
-    <script type="text/javascript" src="scripts/join_modal.js"></script>
+    <link rel="stylesheet" href="./css/join_nav.css">
+    <script type="text/javascript" src="./js/join_check.js"></script>
+    <script type="text/javascript" src="./js/join_modal.js"></script>
     <style>
         .nav-container {
             background-color: #ffffff;
@@ -16,8 +16,7 @@
             right: 0;
             z-index: 1000;
         }
-        
-        nav {
+        .nav {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -35,17 +34,17 @@
 <body>
     <div class="nav-container">
         <nav>
-            <button class="btn_home" onclick="location.href='index.html'">홈으로</button>
-            <button class="btn_join" onclick="location.href='join_nav.html'">회원가입</button>
-            <button class="btn_join_success" onclick="location.href='join_success.html'">회원가입 성공</button>
-            <button class="btn_login" onclick="location.href='login.html'">로그인</button>
-            <button class="btn_login_success" onclick="location.href='login_success.html'">로그인 성공</button>
+            <button class="btn_home" onclick="location.href='../index.html'">홈으로</button>
+            <button class="btn_join" onclick="location.href='./join_nav.html'">회원가입</button>
+            <button class="btn_join_success" onclick="location.href='./join_success.html'">회원가입 성공</button>
+            <button class="btn_login" onclick="location.href='./login.html'">로그인</button>
+            <button class="btn_login_success" onclick="location.href='./login_success.html'">로그인 성공</button>
         </nav>
     </div>
     <div class="join-container">
         <div id="join_wrap">
-            <h1><img src="img/kekeo.png" width="395px" height="95px"></h1>
-                <form action="join_success.html" method="get" onsubmit="return check(this)">
+            <h1><img src="../img/kekeo.png" width="395px" height="95px"></h1>
+                <form action="./join_success.html" method="get" onsubmit="return check(this)">
                     <fieldset>
                         <legend class="title">*필수입력정보</legend>
                         <table class="joinTable">
