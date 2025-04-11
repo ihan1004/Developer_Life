@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱을 이용한 구조</title>
+    <link href="semantic_layout.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="header">
+        <h1><a href="#"><img src="img/logo.png" alt="munchery" /></a></h1>
+        <nav class="lnb"> <!-- local nav bar -->
+            <h2 class="blind">네비게이션</h2>
+            <ul>
+                <li><a href="#">How It Works </a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>a
+        </nav>
+    </header>
+    <!-- 첫번째 section -->
+    <section id="section01">
+        <form>
+            <div class="formbox">
+                <h2><span>Real Food</span><br />Delivered</h2>
+
+                <p>Fresh ingredients. Daily menus.<br />
+                    No commitment. No fuss. </p>
+                <p> Enter Your ZIP Code to View Our Menu</p>
+                <label for="code" class="blind">ZIP Code</label>
+                <input type="submit" value="ZIP CODE" id="code" />
+                <label for="menu" class="blind">See Menu</label>
+                <input type="submit" value="See Menu" id="menu" />
+            </div>
+        </form>
+    </section>
+    <!-- 두번째 section -->
+    <section id="section02">
+        <h2>The Dinners You Want</h2>
+        <article>
+            <h3>Tempting Menus</h3>
+            <p>Cooked dishes, meals to cook, fresh salads,
+                kid's meals, beverages, and treats of all
+                sorts-we've got you covered.</p>
+        </article>
+        <article>
+            <h3>Easy Ordering</h3>
+            <p>Use the website or app to order on-demand
+                or schedule your delivery up to a week in
+                advance. Meal planning is done!</p>
+        </article>
+        <article>
+            <h3>Friendly Delivery</h3>
+            <p>Our delivery folks bring your order right to
+                you, whether that's at home, at the office, or
+                wherever else you may want dinner.</p>
+        </article>
+        <article>
+            <h3>Cold on Purpose</h3>
+            <p>Everything arrives chilled so it all stays
+                fresh. Plus, you get to heat or cook it on
+                your schedule(even when plans change).</p>
+        </article>
+    </section>
+    <!-- 세번째 section -->
+    <section id="section03">
+        <div class="inner">
+            <h2>It Starts With Our Chefs</h2>
+            <p>Munchery chefs come from top restaurants. They bring mad skills, tons <br />
+                of passion, and expertise in a delicious array of cuisines. They insist, as <br />
+                we do, on using only the freshest ingredients to make our tasty, <br />
+                nourishing food.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
