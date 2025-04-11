@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지레이아웃2</title>
+    <link href="webpage_layout2.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <h1 class="logo">
+        <a href="">Alfredo<br />gonzales</a>
+    </h1>
+    <div class="nav">
+        <ul>
+            <li><a href="#"><img src="img/menu01.png" alt="">Home</a></li>
+            <li><a href="#"><img src="img/menu02.png" alt="">Shop</a></li>
+            <li><a href="#"><img src="img/menu03.png" alt="">Custombox</a></li>
+            <li><a href="#"><img src="img/menu04.png" alt="">Blog</a></li>
+            <li><a href="#"><img src="img/menu05.png" alt="">Story</a></li>
+        </ul>
+    </div>
+    <!-- 메인 -->
+    <div class="mainBox container"> <!-- 클래스명을 2개준다 -->
+        <img src="img/header01.jpg" alt="" /> <!-- 왼쪽 -->
+        <div class="right"> <!-- 오른쪽에는 이미지1개, 배너2개 -->
+            <img src="img/side01.jpg" alt="" /> <!-- 오른쪽의 이미지1개-->
+            <div class="banner"> <!-- 오른쪽의 배너 2개 -->
+                <p>Design Your Own Sock</p>
+                <p>The Work Shop</p>
+            </div>
+            <div class="banner">
+                <p>Self Service</p>
+                <p>Online Store</p>
+            </div>
+        </div>
+    </div>
+    <!-- 제품박스1 -->
+    <div class="pro01 container">
+        <div class="left"> <!-- 왼쪽에는 이미지1개, 유튜브1개 -->
+            <img src="img/banner_01.jpg" alt="" />
+            <div>
+                <iframe width="754" height="511" src="https://www.youtube.com/embed/0uI1J9OsbrI?si=lMCOqknGqNq9KTP3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <img src="img/banner_02.jpg" alt="" /> <!-- 오른쪽 이미지1개 -->
+    </div>
+    <!-- 제품박스2 -->
+    <div class="pro02 container"> <!-- 이미지3개 -->
+        <img src="img/banner_03.jpg" alt="" />
+        <img src="img/banner_04.jpg" alt="" />
+        <img src="img/video.jpg" alt="" />
+    </div>
+    <!-- 제품박스3 -->
+    <div class="pro03 container">
+        <img src="img/banner_05.jpg" alt="" /> <!-- 왼쪽 이미지 1개 -->
+        <div class="right"> <!--  오른쪽 유튜브1개, form태그 1개 -->
+            <div>
+                <iframe width="805" height="511" src="https://www.youtube.com/embed/U6Mxi4J0VRw?si=05RDspa8V-A_JrEn"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="sendBox">
+                <form>
+                    <label for="user_email">SIGN UP</label> <input type="text" id="user_email"
+                        placeholder="Your Email Address" /><input type="submit" value="SEND" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

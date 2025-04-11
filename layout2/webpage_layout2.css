@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+iframe {
+    border: 0;
+    vertical-align: top;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 28px;
+}
+
+.logo {
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.nav {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    width: 130px;
+    margin: 0 20px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.nav li img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid red;
+}
+
+/* 공통 */
+.container {
+    width: 1600px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+/* 메인 */
+.mainBox>img {
+    float: left;
+}
+
+.mainBox .right {
+    width: 316px;
+    float: right;
+}
+
+.mainBox .banner {
+    width: 316px;
+    height: 160px;
+    margin-top: 10px;
+    border: 4px solid;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mainBox .banner p:first-child {
+    height: 46px;
+    background-color: #ae09c7;
+    color: white;
+    margin: 20px 0;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.mainBox .banner p:nth-child(2) {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+/* 제품박스1 */
+.pro01 .left {
+    float: left;
+    width: 784px;
+}
+
+.pro01>img {
+    float: right;
+}
+
+/* 제품박스3 */
+.pro03>img {
+    float: left;
+}
+
+.pro03 .right {
+    float: right;
+    width: 805px;
+}
