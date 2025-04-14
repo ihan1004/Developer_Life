@@ -37,7 +37,7 @@ body {
 }
 
 #top .left {
-    background: url(images/0320-1.jpg) no-repeat;
+    background: url(../img/0320-1.jpg) no-repeat;
     width: 750px;
     height: 500px;
     float: left;

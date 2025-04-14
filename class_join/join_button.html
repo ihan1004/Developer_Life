@@ -3,9 +3,9 @@
 
 <head>
     <title>회원가입</title>
-    <link rel="stylesheet" href="css/join_modal.css">
-    <script type="text/javascript" src="js/join_check.js"></script>
-    <script type="text/javascript" src="js/join_modal.js"></script>
+    <link rel="stylesheet" href="./css/join_modal.css">
+    <script type="text/javascript" src="./js/join_check.js"></script>
+    <script type="text/javascript" src="./js/join_modal.js"></script>
     <script type="text/javascript">
         function isSame(a, b) {
             return a === b;
@@ -21,7 +21,7 @@
     <style>
         .nav-container {
             background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 1rem;
             position: fixed;
             top: 0;
@@ -29,6 +29,7 @@
             right: 0;
             z-index: 1000;
         }
+
         .nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -37,6 +38,7 @@
             align-items: center;
             gap: 20px;
         }
+
         .nav-link {
             text-decoration: none;
             color: #333;
@@ -45,22 +47,27 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
+
         .nav-link:hover {
             background-color: #f0f0f0;
         }
+
         .nav-link.active {
             background-color: #4CAF50;
             color: white;
         }
+
         .nav-link.active:hover {
             background-color: #45a049;
         }
+
         /* Add margin to the main content to prevent it from being hidden under the navbar */
         #join_wrap {
             margin-top: 80px;
         }
     </style>
 </head>
+
 <body>
     <button class="btn_home" onclick="location.href='index.html'">홈으로</button>
     <button id="showPopup" class="btn_join">회원가입</button>
